@@ -6,7 +6,8 @@ php:
   #- 5.3
   - 5.6
 env:
- secure: apwMOa6Fe1LlXEwZWJ6a3Hbz0xbUUylin/OFEurV5l8k9aTH/0mR0j0jo4uOBjee7LAqlxs4TV5HPXqMjlsXiBVttxVUeG5ZSdVim52gD517ze9RSdlHoiPcdXbUDfIoz78G7YsGWyTqfPZYmztLUsBfp7q1leJkCml2hzVEpLtlylP9ydyriN0PvsUjk6IyfJ2BvTYCjbPcOPb+eDSLewcWTYRC2ShDyAFlr7iasCpsU+tt3l0byUrUVLofYFnq4Swy/BOILhRwnSMV1L7+O+s5dtKZvFkuONNFycu3QY+wCDDZTBmCHp47RA/I6Er0Rw3SFsvDnCcaYJFF3dzNZg==
+ global:
+   - secure: apwMOa6Fe1LlXEwZWJ6a3Hbz0xbUUylin/OFEurV5l8k9aTH/0mR0j0jo4uOBjee7LAqlxs4TV5HPXqMjlsXiBVttxVUeG5ZSdVim52gD517ze9RSdlHoiPcdXbUDfIoz78G7YsGWyTqfPZYmztLUsBfp7q1leJkCml2hzVEpLtlylP9ydyriN0PvsUjk6IyfJ2BvTYCjbPcOPb+eDSLewcWTYRC2ShDyAFlr7iasCpsU+tt3l0byUrUVLofYFnq4Swy/BOILhRwnSMV1L7+O+s5dtKZvFkuONNFycu3QY+wCDDZTBmCHp47RA/I6Er0Rw3SFsvDnCcaYJFF3dzNZg==
 services:
   - mongodb
 before_script: 
