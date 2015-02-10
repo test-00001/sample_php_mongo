@@ -22,3 +22,4 @@ script:
   - echo $test
 
 cache: true
+archive: true
