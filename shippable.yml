@@ -8,12 +8,17 @@ php:
 env:
  global:
    - secure: ecZuFjmq2Tnp48k/7ebbUD6b3SuGCXUWKmRwILVmuQ9Y9zMI6VrN7ZuBGb/Mbr0frddi9majU5fVyxYe+fTKKlm1jTWJ9n7g8Cas7yX41dIC3m+m83D0PgZLjceAXCQIWHJpzCVxvJxktUmeZxFeJ+BFegNF9ojjEsRKs3DBQuELbePctiGeKsYlkTD5VlJcnP6TLy2ZQmau04oUE+tGh6fyFWCDe/3no/k5T+e2FMvU9Juw1uAxG3wSNU27DGZfDKA8rkeZpmzb9LwlZZYaBMpuQKjjIyZ/krdww693sAYm0/Lro22WCUISiOwSgz88jRTUR43TMQafs02ewll4SA==
+
 services:
   - mongodb
+
 before_script: 
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   - echo "extension=mongo.so" >> ~/.phpenv/versions/$(phpenv global)/etc/php.ini
+
 script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/ConnectToMongoTest.php
   - echo $test
+
+cache: true
