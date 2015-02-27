@@ -17,3 +17,5 @@ before_script:
 script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/ConnectToMongoTest.php
   - echo $test
+
+archive: true
